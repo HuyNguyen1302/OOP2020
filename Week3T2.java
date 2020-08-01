@@ -45,7 +45,7 @@ public class Fraction {
         Fraction newFraction = reduce(d, n);
         return newFraction;
     }
-
+    //subtract
     public Fraction subtract(Fraction fraction) {
         int d = (- this.numerator*fraction.denominator + this.denominator*fraction.numerator);
         int n = (this.numerator*fraction.numerator);
@@ -53,7 +53,7 @@ public class Fraction {
         Fraction newFraction = reduce(d, n);
         return newFraction;
     }
-
+    //multiply
     public Fraction multiply(Fraction fraction) {
         int d = (fraction.denominator)*(this.denominator);
         int n = (this.numerator*fraction.numerator);
@@ -61,7 +61,7 @@ public class Fraction {
         Fraction newFraction = reduce(d, n);
         return newFraction;
     }
-
+    //divide
     public Fraction divide(Fraction fraction) {
         int d = (fraction.numerator)*(this.denominator);
         int n = (this.numerator)*(fraction.denominator);
@@ -69,7 +69,7 @@ public class Fraction {
         Fraction newFraction = reduce(d, n);
         return newFraction;
     }
-
+    //equal
     public boolean equals(Object object) {
         if (object instanceof Fraction) {
             Fraction other = (Fraction) object;
